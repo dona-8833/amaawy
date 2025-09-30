@@ -11,7 +11,9 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setToast("🎉Message Received! Thank you for your interest. We'll get back to you soon.");
+    setToast(
+      "🎉Message Received! Thank you for your interest. We'll get back to you soon."
+    );
     setFormData({ name: "", email: "", message: "" });
 
     setTimeout(() => setToast(null), 4000);
@@ -39,61 +41,66 @@ const Contact = () => {
             {/* Phone */}
 
             <div className="p-6 rounded-lg bg-gradient-to-br from-primary/5 to-transparent border border-primary/20">
-            <a href="tel:+2348135765690" className="mb-4">
-              <div className="flex items-start gap-4">
-                <div className="bg-primary/10 p-3 rounded-full">
-                  <Phone className="w-5 h-5 text-primary" />
+              <a href="tel:+2348135765690" className="mb-4">
+                <div className="flex items-start gap-4">
+                  <div className="bg-primary/10 p-3 rounded-full">
+                    <Phone className="w-5 h-5 text-primary" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold mb-1">Phone</h3>
+                    <p className="text-sm text-muted-foreground">
+                      Call us for more information
+                    </p>
+                  </div>
                 </div>
-                <div>
-                  <h3 className="font-semibold mb-1">Phone</h3>
-                  <p className="text-sm text-muted-foreground">
-                    Call us for more information
-                  </p>
-                </div>
-              </div>
-                        </a>
+              </a>
             </div>
 
-
             {/* Email */}
+
             <div className="p-6 rounded-lg bg-gradient-to-br from-secondary/5 to-transparent border border-secondary/20">
-              <div className="flex items-start gap-4">
-                <div className="bg-secondary/10 p-3 rounded-full">
-                  <Mail className="w-5 h-5 text-secondary" />
+              <a href="mailto:mubarakramadan2349@gmail.com">
+                <div className="flex items-start gap-4">
+                  <div className="bg-secondary/10 p-3 rounded-full">
+                    <Mail className="w-5 h-5 text-secondary" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold mb-1">Email</h3>
+                    <p className="text-sm text-muted-foreground">
+                      Send us your inquiries
+                    </p>
+                  </div>
                 </div>
-                <div>
-                  <h3 className="font-semibold mb-1">Email</h3>
-                  <p className="text-sm text-muted-foreground">
-                    Send us your inquiries
-                  </p>
-                </div>
-              </div>
+              </a>
             </div>
 
             {/* Social Media */}
 
             <div className="p-6 rounded-lg bg-gradient-to-br from-primary/5 to-transparent border border-primary/20">
-            <a href="">
-              <div className="flex items-start gap-4">
-                <div className="bg-primary/10 p-3 rounded-full">
-                  <MessageCircle className="w-5 h-5 text-primary" />
+              <a
+                href="https://www.tiktok.com/@alamaawytv?is_from_webapp=1&sender_device=pc"
+                target="_blank"
+              >
+                <div className="flex items-start gap-4">
+                  <div className="bg-primary/10 p-3 rounded-full">
+                    <MessageCircle className="w-5 h-5 text-primary" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold mb-1">Social Media</h3>
+                    <p className="text-sm text-muted-foreground">
+                      Follow us for updates
+                    </p>
+                  </div>
                 </div>
-                <div>
-                  <h3 className="font-semibold mb-1">Social Media</h3>
-                  <p className="text-sm text-muted-foreground">
-                    Follow us for updates
-                  </p>
-                </div>
-              </div>
-                        </a>
+              </a>
             </div>
-
 
             {/* Highlight */}
             <div className="bg-gradient-to-r from-primary to-secondary p-8 rounded-lg text-center text-white">
               <h3 className="text-2xl font-bold mb-3">We Welcome You!</h3>
               <p className="text-white/90">
-                Join us for this blessed celebration and be part of our spiritual community
+                Join us for this blessed celebration and be part of our
+                spiritual community
               </p>
             </div>
           </div>
@@ -104,14 +111,19 @@ const Contact = () => {
             <form onSubmit={handleSubmit} className="space-y-6">
               {/* Name */}
               <div className="space-y-2">
-                <label htmlFor="name" className="block text-sm font-medium text-foreground">
+                <label
+                  htmlFor="name"
+                  className="block text-sm font-medium text-foreground"
+                >
                   Name
                 </label>
                 <input
                   id="name"
                   placeholder="Your full name"
                   value={formData.name}
-                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                  onChange={(e) =>
+                    setFormData({ ...formData, name: e.target.value })
+                  }
                   required
                   className="w-full px-4 py-3 border border-input rounded-lg bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
                 />
@@ -119,7 +131,10 @@ const Contact = () => {
 
               {/* Email */}
               <div className="space-y-2">
-                <label htmlFor="email" className="block text-sm font-medium text-foreground">
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium text-foreground"
+                >
                   Email
                 </label>
                 <input
@@ -127,7 +142,9 @@ const Contact = () => {
                   type="email"
                   placeholder="your.email@example.com"
                   value={formData.email}
-                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                  onChange={(e) =>
+                    setFormData({ ...formData, email: e.target.value })
+                  }
                   required
                   className="w-full px-4 py-3 border border-input rounded-lg bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
                 />
@@ -135,7 +152,10 @@ const Contact = () => {
 
               {/* Message */}
               <div className="space-y-2">
-                <label htmlFor="message" className="block text-sm font-medium text-foreground">
+                <label
+                  htmlFor="message"
+                  className="block text-sm font-medium text-foreground"
+                >
                   Message
                 </label>
                 <textarea
@@ -143,7 +163,9 @@ const Contact = () => {
                   placeholder="Your message or inquiry..."
                   rows={5}
                   value={formData.message}
-                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                  onChange={(e) =>
+                    setFormData({ ...formData, message: e.target.value })
+                  }
                   required
                   className="w-full px-4 py-3 border border-input rounded-lg bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
                 />
