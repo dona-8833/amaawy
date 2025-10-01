@@ -4,7 +4,7 @@ const Venue = () => {
   const venueAddress =
     "MAZDAR CENTRE, Ogele Road, Eyenkorin, Ilorin, Kwara State";
   const googleMapsUrl =
-    "https://www.google.com/maps/search/?api=1&query=MAZDAR+CENTRE+Ogele+Road+Eyenkorin+Ilorin+Kwara+State";
+    "https://www.google.com/maps/embed?pb=!4v1728247467374!6m8!1m7!1sP-Rje8Fd4s3j8y99tAhi0w!2m2!1d8.393654272588044!2d4.466105101252182!3f101.9172763333!4f0!5f0.7820865974627469";
 
   return (
     <section id="venue" className="py-20 bg-gray-100">
@@ -66,7 +66,7 @@ const Venue = () => {
               {/* Map Embed */}
               <div className="h-full min-h-[300px] rounded-lg overflow-hidden bg-gray-200">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.0!2d4.5!3d8.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOMKwMzAnMDAuMCJOIDTCsDMwJzAwLjAiRQ!5e0!3m2!1sen!2sng!4v1234567890!5m2!1sen!2sng"
+                  src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1973.5408304639684!2d4.466146495701922!3d8.39362918826647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwMjMnMzcuMCJOIDTCsDI3JzU4LjIiRQ!5e0!3m2!1sen!2sng!4v1759319304505!5m2!1sen!2sng"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}

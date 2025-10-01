@@ -27,9 +27,7 @@ const About = () => {
             <div className="p-8 bg-gradient-to-br from-secondary/5 to-transparent border border-secondary/20 shadow-lg rounded-2xl">
               <h3 className="text-xl font-bold mb-4 text-secondary">Motto</h3>
               <p className="text-foreground leading-relaxed italic text-lg">
-                "اِسْتَسْفِحُوا فَقَدْ جَاءَكُمُ الْفَتْحُ"
-              </p>
-            </div>
+                إن تستفتحوا فقد جاءكم الفتح</p></div>
           </div>
 
           {/* Event Purpose Card */}
