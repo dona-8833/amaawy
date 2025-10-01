@@ -4,7 +4,7 @@ const Venue = () => {
   const venueAddress =
     "MAZDAR CENTRE, Ogele Road, Eyenkorin, Ilorin, Kwara State";
   const googleMapsUrl =
-    "https://www.google.com/maps/embed?pb=!4v1728247467374!6m8!1m7!1sP-Rje8Fd4s3j8y99tAhi0w!2m2!1d8.393654272588044!2d4.466105101252182!3f101.9172763333!4f0!5f0.7820865974627469";
+    "https://maps.app.goo.gl/AnNqQhs38riJ98e17";
 
   return (
     <section id="venue" className="py-20 bg-gray-100">
